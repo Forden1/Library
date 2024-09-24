@@ -1,0 +1,161 @@
+body{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+.header{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+ h1{
+  text-align: center;
+  width: 100%;
+  background-color: #9fff9c;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+ }
+}
+
+.card {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 5fr));
+  width: 80%;
+  margin: 2em auto;
+}
+
+.read-button {
+  background-color: #9fff9c;
+  color: #050505;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold; /* Makes the text bolder */
+  font-size: 18px;    /* Slightly larger font size */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.not-read-button {
+  background-color: #ff9c9c;
+  color: #050505;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold; /* Makes the text bolder */
+  font-size: 18px;   /* Slightly larger font size */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.read-button, .not-read-button, .remove-button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: filter 0.15s ease-in-out;
+}
+
+.button-container {
+  justify-content: center;
+  display: flex;
+  gap: 20px; /* Adjust spacing between buttons */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+/* Increase size of the checkbox */
+input[type="checkbox"] {
+  transform: scale(1.5); /* Change the value to increase or decrease size */
+  cursor: pointer; /* Change the cursor to pointer when hovering */
+  /* Optionally, you can adjust margins to center it better */
+  margin: 5px;
+}
+
+#addCardButton{
+  background-color: black; /* Red background */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer; /* Ensures the cursor changes to pointer */
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  
+
+}
+.remove-button {
+  background-color: #f44336; /* Red background */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer; /* Ensures the cursor changes to pointer */
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  filter: brightness(80%);
+}
+.con{
+  
+  display: flex;
+  justify-content: center;
+  top:20%;
+  gap: 20px;
+ 
+}
+label{
+  text-wrap: nowrap;
+}
+.readcon{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold; /* Makes the text bolder */
+  font-size: 18px;
+  gap: 10px;
+}
+
+dialog {
+  
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  bottom: 20%;
+  width: 20%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f0eef1;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Optional: add some backdrop styling */
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+}
+
+form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
+}

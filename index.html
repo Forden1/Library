@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>LIBRARYy</h1>
+
+    </div>
+    <div class="con">
+        <dialog>
+            <button id="closeButton" autofocus>Close</button>
+            <form id="bookForm">
+                <input class="input" type="text" id="title" placeholder="Title" required maxlength="100">
+                <input class="input" type="text" id="author" placeholder="Author" required maxlength="100">
+                <input class="input" type="number" id="pages" placeholder="Number of Pages" required maxlength="100">
+                <div class="readcon">
+                        <label for="read">Have you read it?</label>
+                        <input class="input" type="checkbox"id="read">
+                </div>
+                <button type="submit">Add Book</button> <!-- Submit button -->
+            </form>
+        </dialog>
+    </div>
+    <div class="button-container">
+        <button id="addCardButton">Add Book</button>
+    </div>
+    <div id="card-container"></div>
+</body>
+</html>
